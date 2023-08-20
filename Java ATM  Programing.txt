@@ -1,0 +1,35 @@
+public class bank {
+    
+    static int Balance=1000;
+
+    static void Deposit(int inputbal){
+
+  Balance=Balance+inputbal;
+System.out.println("Deposite Balance in you Account :-"+Balance);
+
+
+    }
+
+
+   static void Withdroal(int inputbal){
+        Balance=Balance-inputbal;
+         System.out.println("withdroal balanec equal to :-"+inputbal);
+
+   }
+
+       static  void Displye(){
+            System.out.println(" Avilable Balance is :- "+ Balance);
+
+       }
+
+public static void main(String args[]){
+ // bank d=new bank(); // calling method 
+   Deposit(400);
+   Withdroal(200);
+    Displye();
+
+}
+
+}
+
+// Output is Rs. 1200
